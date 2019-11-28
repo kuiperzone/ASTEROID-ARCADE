@@ -1,14 +1,14 @@
 # ASTEROID ARCADE #
 ASTEROID ARCADE is an open source "retro vector" game written in C++ by Andy
-Thomas.
+Thomas. It requires the Qt Framework.
 
 ## Running the Game ##
 Download the latest "release" of ASTEROID ARCADE from Github. This will contain
 binaries built for Windows. Run the program under the "bin" directory.
 
 ## More About the Game ##
-ASTEROID ARCADE was inspired by the 1979 classic, Atari Asteroids, although
-there are some signficant differences (it would not be true to say that it 
+Clearly, ASTEROID ARCADE takes inspiration from the 1979 classic, Atari Asteroids,
+although there are some signficant differences (it would not be true to say that it 
 is a straight-forward clone). In Atari Asteroids, for example, asteroids do not
 collide but simply overlap when they encounter each other. In ASTEROID ARCADE,
 however, things are a little more energetic as the game implements a
@@ -19,17 +19,13 @@ The game was primarily written for fun and has served me as a way to learn new
 programming frameworks. I originally wrote an early version of it around 2003.
 I had made the decision to implement the game logic in pure C++ and this made
 it easy to port it to different GUI development frameworks at various times
-since. A past variant, for example, employed wxWidgets. Sometime later, I
-ported it to Qt under the name "Asteroid Cresta". As I recall, there were
-some problems with the sound in this (now old) version as the Qt media
-player component (then called "Phonon") was new at the time and had issues.
+since. An early variant, for example, employed wxWidgets.
 
-More recently, I've done a lot of work to update it and improve its playability.
-I am calling this updated version "ASTEROID ARCADE" and here it is. I hope
-you enjoy it!
-
-(*) Side-note. I was once contacted by a school teacher who was using the
-program to to teach both programming and the conservation of momentum.
+This version, called "ASTEROID ARCADE", links against the Qt Framwork. And here
+it is. I hope you enjoy it!
+ 
+(*) As a side-note. I was once contacted by a school teacher who was using the
+program to teach both programming and the conservation of momentum.
 
 ## Source Code Overview ##
 The source code for this game can be conceptualised as being under two
@@ -81,6 +77,16 @@ asteroids and have a limited tendency to flock. It is an override of the
 GameEntity::crunch() method, namely Ufo::crunch(), which allows the UFO
 the ability to "see" what is around it.
 
+## Other Notes ##
+The game does not store state between application launches.
+
+I haven't yet tested building the software under LINUX, but would expect
+no significant issues in doing so. Both Qt and the game code are
+designed to be cross-platform.
+
+The source code is documented using Doxygen comments. Look for the
+"index.html" file under the "doc" directory.
+
 ## License ##
 ASTEROID ARCADE is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by the
@@ -100,4 +106,3 @@ ASTEROID ARCADE features music originally recorded by Seung Hee Oh
 and used under a Creative Commons (CC-BY) license. Additionally,
 sound effects files originate, I believe, from a game called "Golgotha"
 and are in the public domain.
-
