@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Game</string>
+    </property>
+    <addaction name="actionGame_StartGame"/>
+    <addaction name="actionGame_QuitGame"/>
+    <addaction name="separator"/>
+    <addaction name="actionGame_Sounds"/>
+    <addaction name="separator"/>
+    <addaction name="actionGame_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp_Website"/>
+    <addaction name="actionHelp_SourceCode"/>
+    <addaction name="separator"/>
+    <addaction name="actionHelp_About"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionHelp_About">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionHelp_Website">
+   <property name="text">
+    <string>Website</string>
+   </property>
+  </action>
+  <action name="actionGame_StartGame">
+   <property name="text">
+    <string>Start Game</string>
+   </property>
+  </action>
+  <action name="actionGame_QuitGame">
+   <property name="text">
+    <string>Quit Game</string>
+   </property>
+  </action>
+  <action name="actionGame_Sounds">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Sounds</string>
+   </property>
+  </action>
+  <action name="actionGame_Exit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionHelp_SourceCode">
+   <property name="text">
+    <string>Source Code Documentation</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

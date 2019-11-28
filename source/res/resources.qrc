@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+
+        <file>app_icon.ico</file>
+        <file>splash.png</file>
+
+        <file>intro_music.mp3</file>
+        <file>start.wav</file>
+        <file>big_explosion.wav</file>
+        <file>medium_explosion.wav</file>
+        <file>small_explosion.wav</file>
+        <file>thrust.wav</file>
+        <file>gun_fire.wav</file>
+
+    </qresource>
+</RCC>
