@@ -29,10 +29,12 @@ it is. I hope you enjoy it!
 program to teach both programming and the conservation of momentum.
 
 ## Source Code Overview ##
-The source code for this game can be conceptualised as being under two
+The source code for this game can be conceptualised as two
 distinct areas:
+
 * The game core
 * Main application
+
 The game core is located under the subdirectory "game" and employs the
 namespace "Game". This code is not coupled in any way to Qt, but is restricted
 to C++11 only. It was design decision to place all internal game complexity
