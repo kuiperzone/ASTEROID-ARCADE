@@ -82,7 +82,7 @@ asteroids and have a limited tendency to flock. It is an override of the
 GameEntity::crunch() method, namely Ufo::crunch(), which allows the UFO
 the ability to "see" what is around it.
 
-## Other Notes ##
+### Other Notes ###
 The game does not store state between application launches.
 
 I haven't yet tested building the software under LINUX, but would expect
