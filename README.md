@@ -5,8 +5,7 @@ Thomas. It requires the Qt Framework.
 ![ASTEROID ARCADE SCREENSHOT](/SCREENSHOT.png?raw=true "ASTEROID ARCADE SCREENSHOT")
 
 ## Running the Game ##
-Download the latest "release" of ASTEROID ARCADE from Github. This will contain
-binaries built for Windows. Run the program under the "bin" directory.
+Download the latest "release" of ASTEROID ARCADE from Github (click "release" near the top of the page and download the zip file). This will contain binaries built for Windows. Run the program under the "bin" directory. Because the exe is not signed, Windows may warn you about running the program. Assuming you trust Github and me, click "More Info" and allow the program.
 
 ## More About the Game ##
 Clearly, ASTEROID ARCADE takes inspiration from the 1979 classic, Atari Asteroids,
