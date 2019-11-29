@@ -1,5 +1,5 @@
 # ASTEROID ARCADE #
-ASTEROID ARCADE is an open source "retro vector" game written in C++ by Andy
+ASTEROID ARCADE is a highly playable open source "retro vector" game written in C++ by Andy
 Thomas. It requires the Qt Framework.
 
 ![ASTEROID ARCADE SCREENSHOT](/SCREENSHOT.png?raw=true "ASTEROID ARCADE SCREENSHOT")
