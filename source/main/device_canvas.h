@@ -18,7 +18,7 @@
 
 namespace Game {
 
-//! Implements CanvasInterface for QPaintDevice. We defive this from both
+//! Implements CanvasInterface for QPaintDevice. We derive this from both
 //! CanvasInterface and QObject in order to take advantage of slots.
 class DeviceCanvas : public QObject, public CanvasInterface
 {
