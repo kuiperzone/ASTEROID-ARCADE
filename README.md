@@ -65,7 +65,7 @@ All "entities" within the game are derived from a base class called
 Game::Internal::GameEntity. It has a couple methods of note:
 
 * GameEntity::crunch()
-* GameEntity::advanced()
+* GameEntity::advance()
 
 The crunch() method is where each object determines whether it is in
 collision with another and, signicantly, it is where the conservation
