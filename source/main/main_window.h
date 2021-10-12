@@ -45,7 +45,6 @@ private slots:
     void on_actionGame_Exit_triggered();
 
     void on_actionHelp_Website_triggered();
-    void on_actionHelp_SourceCode_triggered();
     void on_actionHelp_About_triggered();
 
 private:

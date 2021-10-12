@@ -21,7 +21,7 @@ namespace Game {
 const std::string GameTitle = "ASTEROID ARCADE";
 
 //! Copyright string.
-const std::string Copyright = "Copyright \u00a9 Andy Thomas 2019";
+const std::string Copyright = "Copyright \u00a9 Andy Thomas 2021";
 
 //! License name.
 const std::string LicenseName = "GPLv3";

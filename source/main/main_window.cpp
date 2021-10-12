@@ -26,15 +26,16 @@ MainWindow::MainWindow(QWidget *parent) :
     setWindowTitle(QString::fromStdString(Game::GameTitle));
 
     // DeviceCanvas is a QObject and will be deleted by parent
-    Game::DeviceCanvas *canvas = new Game::DeviceCanvas(this, menuBar()->height(), 5);
+    Game::DeviceCanvas *canvas = new Game::DeviceCanvas(this, menuBar()->height(), 0);
 
     _player = new Game::Player(canvas);
     connect(&_pollTimer, &QTimer::timeout, this, &MainWindow::advanceUniverse);
 
     // Set default background color to match canvas
-    QPalette pal = palette();
+    QPalette pal;
     pal.setColor(QPalette::Background, canvas->background());
-    this->setPalette(pal);
+    pal.setColor(QPalette::ButtonText, Qt::white);
+    setPalette(pal);
 
     _dialog = new AboutDialog(this);
 }
@@ -109,13 +110,6 @@ void MainWindow::on_actionGame_Exit_triggered()
 void MainWindow::on_actionHelp_Website_triggered()
 {
     QDesktopServices::openUrl(QString::fromStdString(Game::WebUrl));
-}
-
-void MainWindow::on_actionHelp_SourceCode_triggered()
-{
-    // Assume runtime in "bin" side-by-side with doc directory
-    QUrl url = QUrl::fromLocalFile(QApplication::applicationDirPath() + "/../doc/index.html");
-    QDesktopServices::openUrl(url);
 }
 
 void MainWindow::on_actionHelp_About_triggered()

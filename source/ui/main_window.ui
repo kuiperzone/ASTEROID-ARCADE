@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../res/resources.qrc">
+    <normaloff>:/app_icon.ico</normaloff>:/app_icon.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout"/>
   </widget>
@@ -22,7 +26,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuGame">
@@ -41,8 +45,6 @@
      <string>Help</string>
     </property>
     <addaction name="actionHelp_Website"/>
-    <addaction name="actionHelp_SourceCode"/>
-    <addaction name="separator"/>
     <addaction name="actionHelp_About"/>
    </widget>
    <addaction name="menuGame"/>
@@ -82,12 +84,9 @@
     <string>Exit</string>
    </property>
   </action>
-  <action name="actionHelp_SourceCode">
-   <property name="text">
-    <string>Source Code Documentation</string>
-   </property>
-  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../res/resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

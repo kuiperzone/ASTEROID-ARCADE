@@ -3,25 +3,33 @@
 #-------------------------------------------------
 TARGET_MAJOR=2
 TARGET_MINOR=0
-TARGET_PATCH=0
+TARGET_PATCH=1
 VERSION = $${TARGET_MAJOR}.$${TARGET_MINOR}.$${TARGET_PATCH}
 DEFINES += "APP_VERSION=\"\\\"$${VERSION}\\\"\""
 
 QMAKE_TARGET_PRODUCT = "ASTEROID ARCADE"
 QMAKE_TARGET_COMPANY = "Andy Thomas"
-QMAKE_TARGET_COPYRIGHT = "Andy Thomas 2019"
+QMAKE_TARGET_COPYRIGHT = "Andy Thomas 2021"
 QMAKE_TARGET_DESCRIPTION = "Open Source Arcade Game"
 
 #-------------------------------------------------
 # CONFIGURATION
 #-------------------------------------------------
-TARGET = "ASTEROID"
+TARGET = "AsteroidArcade"
 TEMPLATE = app
 QT *= core gui widgets multimedia
 CONFIG *= c++11 stl exceptions_off
 
+# Objects and temp files.
+OBJECTS_DIR = $$OUT_PWD/tmp/obj
+RCC_DIR = $$OUT_PWD/tmp/rcc
+MOC_DIR = $$OUT_PWD/tmp/moc
+UI_DIR = $$OUT_PWD/tmp/uic
+DESTDIR = $$OUT_PWD/bin
+
 # RELEASE vs DEBUG
 Debug:DEFINES *= DEBUG
+Release:DEFINES *= QT_NO_DEBUG_OUTPUT
 
 # FIXES
 # We want M_PI and other math defines.

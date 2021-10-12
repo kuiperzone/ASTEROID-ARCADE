@@ -59,9 +59,12 @@ void AboutDialog::populate()
     QString text = "<html><body style=\"color:$(FORE_COL);\">"
         "<p>Version : $(APP_VERSION)</p>"
 
-        "<p>$(COPYRIGHT_STATEMENT)<br/>"
-        "Website : <a href=\"$(LINK_URL)\"><span style=\"text-decoration: underline; "
-        "color:$(LINK_COL);\">$(LINK_NAME)</span></a><br/>"
+        "<p><a href=\"$(LINK_URL)\"><span style=\"text-decoration: underline; "
+            "color:$(LINK_COL);\">$(LINK_NAME)</span></a><br/>"
+        "$(COPYRIGHT_STATEMENT)</p>"
+
+        "<p><a href=\"$(PROJ_URL)\"><span style=\"text-decoration: underline; "
+            "color:$(LINK_COL);\">$(PROJ_NAME)</span></a><br/>"
         "License : $(LICENSE_NAME)</p>"
 
         "<p><b>Attribution</b><br/>"
@@ -79,13 +82,15 @@ void AboutDialog::populate()
     text.replace("$(LINK_NAME)", QString::fromStdString(Game::WebUrl));
     text.replace("$(LINK_URL)", QString::fromStdString(Game::WebUrl));
 
+    text.replace("$(PROJ_NAME)", "Github Page");
+    text.replace("$(PROJ_URL)", "https://github.com/kuiperzone/ASTEROID-ARCADE");
+
     // Version is set in PRO file
     text.replace("$(APP_VERSION)", APP_VERSION);
 
     QString attrib = "Intro Music: Seung Hee Oh (CC-BY)<br/>"
         "Sound Effects: Golgotha (Public Domain)<br/>"
-        "<br/>"
-        "This software uses the Qt Framework © 2019 The Qt Company."
+        "This software uses the Qt Framework © The Qt Company."
         "<br/>";
 
     text.replace("$(ATTRIB_TEXT)", attrib);
