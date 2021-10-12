@@ -1,6 +1,6 @@
 # ASTEROID ARCADE #
 ASTEROID ARCADE is an open source cross-platform "retro vector" game written
-in C++ and utilising the Qt Framework. It is licensed under GPLv3.
+in C++ utilising the Qt Framework. It is licensed under GPLv3.
 
 ## Running the Game ##
 Download the latest "release" of ASTEROID ARCADE from Github for a pre-built application for both Linux and Windows.
