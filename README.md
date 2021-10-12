@@ -9,7 +9,7 @@ Download the latest "release" of ASTEROID ARCADE from Github for a pre-built app
 
 The game does not store state between application launches.
 
-<img alt="Screenshot" src="SCREENSHOT.png" style="margin:1em 0 1em 0; max-width:1000px; width:50%;"/>
+<img alt="Screenshot" src="SCREENSHOT.png" style="margin:1em 0 1em 0; max-width:1000px; width:70%;"/>
 
 ## More About the Game ##
 Clearly, ASTEROID ARCADE takes inspiration from the 1979 classic, Atari Asteroids,
@@ -27,6 +27,8 @@ since. An early variant, for example, employed wxWidgets.
 
 This version, called "ASTEROID ARCADE", links against the Qt Framwork. And here
 it is. I hope you enjoy it!
+
+For a detailed explanation of the source code: https://kuiper.zone/asteroids-game-in-c-qt/
 
 ## Credits and Attribution ##
 ASTEROID ARCADE features music originally recorded by Seung Hee Oh and used under
