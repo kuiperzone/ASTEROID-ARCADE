@@ -13,7 +13,7 @@ The game does not store state between application launches.
 
 ## More About the Game ##
 Clearly, ASTEROID ARCADE takes inspiration from the 1979 classic, Atari Asteroids,
-although there are some signficant differences (it would not be true to say that it
+although there are some significant differences (it would not be true to say that it
 is a clone). In Atari Asteroids, for example, asteroids do not collide but simply
 overlap when they encounter each other. In ASTEROID ARCADE, however, things are a
 little more energetic as the game implements a conservation of momentum rule and,
