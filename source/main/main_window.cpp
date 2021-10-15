@@ -24,18 +24,13 @@ MainWindow::MainWindow(QWidget *parent) :
 
     setMinimumSize(300, 225);
     setWindowTitle(QString::fromStdString(Game::GameTitle));
+    statusBar()->setVisible(false);
 
     // DeviceCanvas is a QObject and will be deleted by parent
-    Game::DeviceCanvas *canvas = new Game::DeviceCanvas(this, menuBar()->height(), 0);
+    Game::DeviceCanvas *canvas = new Game::DeviceCanvas(this, 0, 0);
 
     _player = new Game::Player(canvas);
     connect(&_pollTimer, &QTimer::timeout, this, &MainWindow::advanceUniverse);
-
-    // Set default background color to match canvas
-    QPalette pal;
-    pal.setColor(QPalette::Background, canvas->background());
-    pal.setColor(QPalette::ButtonText, Qt::white);
-    setPalette(pal);
 
     _dialog = new AboutDialog(this);
 }
